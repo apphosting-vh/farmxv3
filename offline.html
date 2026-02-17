@@ -23,7 +23,7 @@
   <title>Farm Manager - One Stop Solution for Farming Expense Management</title>
   
   <!-- PWA Manifest -->
-  <link rel="manifest" href="https://apphosting-vh.github.io/farmcxv2/manifest.json">
+  <link rel="manifest" href="https://apphosting-vh.github.io/farmxv3/manifest.json">
   
   <!-- Icons -->
   <link rel="icon" type="image/png" sizes="192x192" href="/icon-192.png">
@@ -2089,12 +2089,12 @@ function FarmWageManager() {
                       </button>
                     </div>
 
-                    {/* Recent Transactions */}
+                    {/* Recent 10 Transactions History */}
                     {(() => {
                       const workerPayments = payments.filter(p => 
                         p.workerId === worker.id
                       ).sort((a, b) => new Date(b.date) - new Date(a.date))
-                       .slice(0, 5); // Show only last 5 transactions
+                       .slice(0, 10); // Show only last 10 transactions
                       
                       if (workerPayments.length > 0) {
                         return (
@@ -7272,7 +7272,7 @@ if (typeof ReactDOM !== 'undefined' && document.getElementById('root')) {
     // Register Service Worker
     if ('serviceWorker' in navigator) {
       window.addEventListener('load', () => {
-        navigator.serviceWorker.register('/farmcxv2/service-worker.js')
+        navigator.serviceWorker.register('https://apphosting-vh.github.io/farmxv3/sw.js')
           .then(reg => console.log('✅ SW registered:', reg.scope))
           .catch(err => console.log('❌ SW failed:', err));
       });
