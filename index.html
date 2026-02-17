@@ -23,7 +23,7 @@
   <title>Farm Manager - One Stop Solution for Farming Expense Management</title>
   
   <!-- PWA Manifest -->
-  <link rel="manifest" href="https://apphosting-vh.github.io/farmcxv2/manifest.json">
+  <link rel="manifest" href="https://apphosting-vh.github.io/farmxv3/manifest.json">
   
   <!-- Icons -->
   <link rel="icon" type="image/png" sizes="192x192" href="/icon-192.png">
@@ -7272,7 +7272,7 @@ if (typeof ReactDOM !== 'undefined' && document.getElementById('root')) {
     // Register Service Worker
     if ('serviceWorker' in navigator) {
       window.addEventListener('load', () => {
-        navigator.serviceWorker.register('https://apphosting-vh.github.io/farmcxv2/sw.js')
+        navigator.serviceWorker.register('https://apphosting-vh.github.io/farmxv3/sw.js')
           .then(reg => console.log('✅ SW registered:', reg.scope))
           .catch(err => console.log('❌ SW failed:', err));
       });

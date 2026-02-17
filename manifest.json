@@ -2,7 +2,7 @@
   "name": "Farm Manager",
   "short_name": "Farm Manager",
   "description": "One Stop Solution for Farming Expense Management",
-  "start_url": "/farmcxv2/",
+  "start_url": "/farmxv3/",
   "display": "standalone",
   "background_color": "#ffffff",
   "theme_color": "#27ae60",
@@ -11,13 +11,13 @@
   "prefer_related_applications": false,
   "icons": [
     {
-      "src": "/farmcxv2/icon-192.png",
+      "src": "/farmxv3/icon-192.png",
       "sizes": "192x192",
       "type": "image/png",
       "purpose": "any maskable"
     },
     {
-      "src": "/farmcxv2/icon-512.png",
+      "src": "/farmxv3/icon-512.png",
       "sizes": "512x512",
       "type": "image/png",
       "purpose": "any maskable"
